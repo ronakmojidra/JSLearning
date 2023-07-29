@@ -1,6 +1,5 @@
 function gradeCalculation(marks) {
-  var marksValue = +marks;
-  if (isNaN(marksValue) || marks < 0 || marks > 100 || marks == 0) {
+  if (isNaN(marks) || marks <= 0 || marks > 100) {
     console.log(` Your Marks is: ${marks}, Please provide the valid Marks`);
   } else {
     if (marks >= 90) {
@@ -14,12 +13,19 @@ function gradeCalculation(marks) {
         } else {
           if (marks >= 35 && marks < 50) {
             console.log(`Marks is ${marks}, your grade is C, Need improvement`);
+          } else {
+            if (marks <= 35) {
+              console.log(
+                `Your Marks is ${marks}, You are fail, you need improvement`
+              );
+            }
           }
         }
       }
     }
   }
 }
+
 gradeCalculation(98);
 gradeCalculation(80);
 gradeCalculation(90);
