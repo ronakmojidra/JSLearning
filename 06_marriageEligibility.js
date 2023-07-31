@@ -26,7 +26,7 @@ marriageEligibility("Other", 41);
 console.log(`------------------Assignment 03-----------------`);
 var leapYear = function (year) {
   if (year <= 0 || isNaN(+year)) {
-    console.log(`Year: ${year} is Invalid Input`);
+    console.log(`Year: ${year} isn   Invalid Input`);
   } else {
     if (year%4 == 0) {
 console.log(`Year: ${year} is a leap Year`);      
