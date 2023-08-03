@@ -80,11 +80,11 @@ console.log(`Is number 23 available in the array: ${res1}`);
 
 console.log(`12>-------------------------`);
 console.log(arrayNumbers);
-let res2 = arrayNumbers.splice(3, 0, 55, 66);
+arrayNumbers.splice(3, 0, 55, 66);
 console.log(`Insert Number before index 3 is: ${arrayNumbers}`);
 
 console.log(`13>-------------------------`);
-let delNum = arrayNumbers.splice(4, 3);
+arrayNumbers.splice(4, 3);
 console.log(`After delete 3 element starting from index 4 is: ${arrayNumbers} `);
 
 
