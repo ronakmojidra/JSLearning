@@ -1,19 +1,27 @@
-function prime(num) {
-  let chk = 0;
-  for (let index = 2; index < num; index++) {
-    if (num % 2 == 0) {
-      {
-        chk++;
-        break;
-      }
-    }
+
+
+function isprime (n){
+  if (n===1) {
+      return `You entered 1 & is not prime number`
   }
-  if (chk == 0) {
-    console.log(`${num} is a prime number`);
-  } else {
-    console.log(`${num} is not a prime number`);
+  else if (n===2){
+      return `Is prime`
+  }
+  else {
+      for (let index = 3; index < n; index++) {
+          if (n%index===0) {
+              return `Entered number is ${n} & it is not prime number`
+          }
+          
+      }
+      return`Entered number is ${n} & it is prime number `;
+       
   }
 }
-prime(2);
-prime(3);
-prime(7);
+console.log(isprime(11));
+console.log(isprime(21));
+console.log(isprime(47));
+console.log(isprime(3));
+console.log(isprime(1));
+
+
