@@ -38,14 +38,14 @@ if(element1.emp_dept == "Finance"){
 });
 
 
-// console.log(`3>-----------------------------------`);
-// for (const element2 of array) {
-//     const department = array[element2];
-//     if (department.emp_name.startsWith("R")) 
-//     {
-//         console.log(`The employee whose name starts with R is: ${department.emp_name}`);
-//     }
-// }
+console.log(`3>-----------------------------------`);
+for (const element2 of array) {
+    
+    if (element2.emp_name.startsWith("R")) 
+    {
+        console.log(`The employee whose name starts with R is: ${element2.emp_name}`);
+    }
+}
 
 console.log(`4>-----------------------------------`);
 array.forEach((element3)=>{
